@@ -1,0 +1,25 @@
+OrdererOrgs:
+  - Name: Orderer
+    Domain: example.com
+    Specs:
+      - Hostname: orderer
+
+PeerOrgs:
+  - Name: Org1
+    Domain: org1.example.com
+    Template:
+      Count: 1 # 기관내의 peer의 수
+    Users:
+      Count: 1 # 기본으로 포함할 사용자의 인증서 수
+  - Name: Org2
+    Domain: org2.example.com
+    Template:
+      Count: 1 # 기관내의 peer의 수
+    Users:
+      Count: 1 # 기본으로 포함할 사용자의 인증서 수
+  - Name: Org3
+    Domain: org3.example.com
+    Template:
+      Count: 1 # 기관내의 peer의 수
+    Users:
+      Count: 1 # 기본으로 포함할 사용자의 인증서 수
